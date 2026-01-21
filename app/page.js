@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Page from "./week-2/page";
 import Link from "next/link";
 
