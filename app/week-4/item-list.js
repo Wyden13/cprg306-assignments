@@ -1,6 +1,6 @@
 import Item from "./item";
-import items from "./items.json"
-export default function ItemList() {
+
+export default function ItemList({ items }) {
     return (
         <ul>
             {items.map(item => (
