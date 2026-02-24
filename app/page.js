@@ -18,6 +18,9 @@ export default function Home() {
         <li className="inline-block px-2 py-1 rounded bg-blue-400 shadow-md w-full h-16">
           <Link href="/week-5" className="text-lg font-bold">Go to Week 5</Link>
         </li>
+        <li className="inline-block px-2 py-1 rounded bg-yellow-400 shadow-md w-full h-16">
+          <Link href="/week-6" className="text-lg font-bold">Go to Week 6</Link>
+        </li>
       </ul>
     </main>
    
