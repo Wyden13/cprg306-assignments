@@ -22,8 +22,8 @@ export default function NewItem({onAddItem}) {
        setItem(initialState);
     } 
     const handleChange = (e) => {
-            const {name, value} = e.target;
-            setItem((prev)=>({...prev,  [name]: value}));
+        const {name, value} = e.target;
+        setItem((prev)=>({...prev,  [name]: value}));
     }
   return (
     <form 
@@ -36,6 +36,7 @@ export default function NewItem({onAddItem}) {
             className="ml-4 flex-1 bg-white rounded h-10 px-2"
             type="text"
             id="name"
+            name="name"
             value={item.name}
             required
             onChange={handleChange}
@@ -50,6 +51,7 @@ export default function NewItem({onAddItem}) {
                 type="number"
                 id="quantity"
                 value={item.quantity}
+                name="quantity"
                 className="ml-4 flex-1 bg-white rounded h-10 px-2"
                 min="1"
                 max="99"
@@ -64,6 +66,7 @@ export default function NewItem({onAddItem}) {
                     placeholder="Select category"
                     opaque="0.5"
                     className="ml-4 bg-white rounded h-10"
+                    name="category"
                     onChange={handleChange}
                 >
                     {options.map((option) => (
