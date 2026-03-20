@@ -23,7 +23,8 @@ export default function Home() {
           <Card href="/week-5" color="bg-blue-500">Week 5<br/><span className="text-sm font-normal">State & Events</span></Card>
           <Card href="/week-6" color="bg-yellow-400 text-slate-900">Week 6<br/><span className="text-sm font-normal">Forms & Lists</span></Card>
           <Card href="/week-7" color="bg-pink-500">Week 7<br/><span className="text-sm font-normal">Routing & APIs</span></Card>
-          <Card href="/week-8" color="bg-teal-500">Week 8<br/><span className="text-sm font-normal">Final Project</span></Card>
+          <Card href="/week-8" color="bg-teal-500">Week 8<br/><span className="text-sm font-normal">API Integration</span></Card>
+          <Card href="/week-9" color="bg-orange-500">Week 9<br/><span className="text-sm font-normal">Firebase & authentication</span></Card>
         </section>
 
         <footer className="mt-8 text-center text-sm text-slate-400">
