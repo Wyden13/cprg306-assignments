@@ -1,3 +1,4 @@
+"use client";
 import LoginForm from "@/app/components/auth/LoginForm";
 import Link from "next/link";
     
