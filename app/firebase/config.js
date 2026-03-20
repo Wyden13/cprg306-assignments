@@ -15,14 +15,14 @@ const firebaseConfig = {
 };
  
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-// let app;
-// let auth;
+// const app = initializeApp(firebaseConfig);
+// export const auth = getAuth(app);
+let app;
+let auth;
 
-// if (firebaseConfig.apiKey) {
-//   app = initializeApp(firebaseConfig);
-//   auth = getAuth(app);
-// }
+if (firebaseConfig.apiKey) {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+}
 
-// export { auth };
+export { auth };
