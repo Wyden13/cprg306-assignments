@@ -17,16 +17,31 @@ export function AuthContextProvider({ children }) {
 
   // GitHub Sign-In function
   const gitHubSignIn = () => {
+    if (!auth) {
+      console.error("Firebase auth is not initialized");
+      throw new Error("Firebase is not initialized. Please check your environment variables.");
+    }
     const provider = new GithubAuthProvider();
     return signInWithPopup(auth, provider);
   };
 
   // Firebase Sign-Out function
   const firebaseSignOut = () => {
+    if (!auth) {
+      console.error("Firebase auth is not initialized");
+      throw new Error("Firebase is not initialized. Please check your environment variables.");
+    }
     return signOut(auth);
   };
   // Listen for authentication state changes
   useEffect(() => {
+    // If auth is not initialized, set loading to false and return
+    if (!auth) {
+      console.warn("Firebase auth is not initialized");
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(
       auth,
       (user) => {
