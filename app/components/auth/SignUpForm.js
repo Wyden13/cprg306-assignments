@@ -55,7 +55,7 @@ export default function SignUpForm({ weekPath }) {
           type="email"
           name="signup-email"
           id="signup-email"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-gray-900"
           placeholder="you@example.com"
           required
         />
@@ -74,12 +74,12 @@ export default function SignUpForm({ weekPath }) {
           type="password"
           name="signup-password"
           id="signup-password"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-gray-900"
           placeholder="••••••••"
           required
         />
       </div>
-      <p className="mt-4">
+      <p className="mt-4 text-gray-900">
         Already have an account?{" "}
         <Link href="/week-10/login" className="text-blue-500 hover:underline">
           Login

@@ -55,7 +55,7 @@ export default function LoginForm({ weekPath, routerPath }) {
           type="email"
           name="login-email"
           id="login-email"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-gray-900"
           placeholder="you@example.com"
           required
         />
@@ -74,15 +74,15 @@ export default function LoginForm({ weekPath, routerPath }) {
           type="password"
           name="login-password"
           id="login-password"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1  text-gray-900"
           placeholder="••••••••"
           required
         />
       </div>
-      <p className="mt-4">
+      <p className="mt-4 text-gray-900">
         Don't have an account?{" "}
         <Link
-          href={`/week-${weekPath}/register`}
+          href={`/${weekPath}/register`}
           className="text-blue-500 hover:underline"
         >
           Sign up
