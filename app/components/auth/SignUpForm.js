@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { signUpWithEmailAndPassword } from "@/app/lib/authHelpers";
 import Link from "next/link";
 
-export default function SignUpForm() {
+export default function SignUpForm({ weekPath }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,7 +30,7 @@ export default function SignUpForm() {
       setEmail("");
       setPassword("");
       setTimeout(() => {
-        router.push("/week-9/shopping-list");
+        router.push(`/${weekPath}/shopping-list`);
       }, 1500);
     }
   };
@@ -81,7 +81,7 @@ export default function SignUpForm() {
       </div>
       <p className="mt-4">
         Already have an account?{" "}
-        <Link href="/week-9/login" className="text-blue-500 hover:underline">
+        <Link href="/week-10/login" className="text-blue-500 hover:underline">
           Login
         </Link>
       </p>

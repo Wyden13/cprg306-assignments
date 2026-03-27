@@ -16,9 +16,9 @@ export default function Page() {
     // Protect route - redirect to login if not authenticated
     useEffect(() => {
         if (!loading && !user) {
-            router.push("/week-9");
+            router.push("/week-9/login");
         }
-    }, [user, loading, router]);
+    }, []);
 
     // Show loading state
     if (loading) {
