@@ -56,6 +56,13 @@ export default function Page() {
                     >
                         Create Account
                     </Link>
+
+                    <button
+                        onClick={gitHubSignIn}
+                        className="block w-full bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-semibold"
+                    >
+                        Sign In with GitHub
+                    </button>
                 </div>
 
                 <p className="text-sm text-gray-500 mt-8">
